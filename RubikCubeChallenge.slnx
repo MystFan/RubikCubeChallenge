@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="RubikCubeChallenge.Console/RubikCubeChallenge.Console.csproj" />
+  <Project Path="RubikCubeChallenge.Cube/RubikCubeChallenge.Cube.csproj" />
+  <Project Path="RubikCubeChallenge.Tests/RubikCubeChallenge.Tests.csproj" />
+</Solution>
