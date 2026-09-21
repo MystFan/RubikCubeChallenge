@@ -5,28 +5,28 @@
         public void Print(IPrintableCube cube)
         {
             // Up: U
-            for (int row = 0; row < cube.N; row++)
+            for (int row = 0; row < cube.Size; row++)
             {
-                Console.Write(new string(' ', cube.N * 2));
-                PrintRow(cube.N, cube.Up, row);
+                Console.Write(new string(' ', cube.Size * 2));
+                PrintRow(cube.Size, cube.Up, row);
                 Console.WriteLine();
             }
 
             // Middle: L, F, R, B
-            for (int row = 0; row < cube.N; row++)
+            for (int row = 0; row < cube.Size; row++)
             {
-                PrintRow(cube.N, cube.Left, row); 
-                PrintRow(cube.N, cube.Front, row); 
-                PrintRow(cube.N, cube.Right, row); 
-                PrintRow(cube.N, cube.Back, row); 
+                PrintRow(cube.Size, cube.Left, row); 
+                PrintRow(cube.Size, cube.Front, row); 
+                PrintRow(cube.Size, cube.Right, row); 
+                PrintRow(cube.Size, cube.Back, row); 
                 Console.WriteLine();
             }
 
             // Down (D)
-            for (int row = 0; row < cube.N; row++)
+            for (int row = 0; row < cube.Size; row++)
             {
-                Console.Write(new string(' ', cube.N * 2));
-                PrintRow(cube.N, cube.Down, row);
+                Console.Write(new string(' ', cube.Size * 2));
+                PrintRow(cube.Size, cube.Down, row);
                 Console.WriteLine();
             }
         }

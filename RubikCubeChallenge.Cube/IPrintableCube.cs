@@ -2,7 +2,7 @@
 {
     public interface IPrintableCube
     {
-        int N { get; }
+        int Size { get; }
 
         char[,] Up { get; }
 
